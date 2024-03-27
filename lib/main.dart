@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled4/Response.dart';
 
 void main() {
@@ -91,6 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.grey,actions: [
+        IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.search)),
+        IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.filter))
 
       ],
         // TRY THIS: Try changing the color here to a specific color (to
