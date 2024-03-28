@@ -9,7 +9,7 @@ class ResponseData {
     status = json['Status'];
     message = json['Message'];
     result =
-        json['Result'] != null ? new Result.fromJson(json['Result']) : null;
+    json['Result'] != null ? new Result.fromJson(json['Result']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -56,11 +56,11 @@ class Category {
 
   Category(
       {this.id,
-      this.name,
-      this.isAuthorize,
-      this.update080819,
-      this.update130919,
-      this.subCategories});
+        this.name,
+        this.isAuthorize,
+        this.update080819,
+        this.update130919,
+        this.subCategories});
 
   Category.fromJson(Map<String, dynamic> json) {
     id = json['Id'];
